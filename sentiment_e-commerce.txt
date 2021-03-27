@@ -17,6 +17,7 @@ setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
 
 
 # read positive and negative words from local files
+
 posText <- read.delim("C:/Users/sagar/Desktop/r/pvw/positive-words.txt", header=FALSE, stringsAsFactors=FALSE)
 posText <- posText$V1
 posText <- unlist(lapply(posText, function(x) { str_split(x, "\n") }))
